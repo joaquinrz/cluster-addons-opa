@@ -43,5 +43,7 @@ spec:
         name: opa
         namespace: flux-system
       interval: 1m
+  dependsOn:
+    - name: cert-manager
   values:
     replicaCount: 1
